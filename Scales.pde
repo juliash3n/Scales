@@ -1,5 +1,5 @@
 void setup() {
-  size(600, 600);  //feel free to change the size
+  size(500, 500);  //feel free to change the size
   noLoop(); //stops the draw() function from repeating
 }
 void draw() {
@@ -32,3 +32,4 @@ beginShape();
   curveVertex(x+25,y-25);
   endShape();
 }
+
