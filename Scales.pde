@@ -14,10 +14,7 @@ void draw() {
    else
    pangolin(x,y);
    }
-   if(shift == true)
-   shift = false;
-   else
-   shift = true;
+   shift = !shift;
   }
 }
 }
@@ -33,6 +30,7 @@ ellipse(x-25,y-25);
   //curveVertex(x+25,y-25);
   //endShape();
 }
+
 
 
 
