@@ -24,14 +24,16 @@ void draw() {
 
 void pangolin(int x, int y) {
   //your code here
-beginShape();
-  curveVertex(x-25,y-25);
-  curveVertex(x-25,y-25);
-  curveVertex(x-5,y+20);
-  curveVertex(x+25,y-25);
-  curveVertex(x+25,y-25);
-  endShape();
+ellipse(x-25,y-25);
+  //beginShape();
+  //curveVertex(x-25,y-25);
+  //curveVertex(x-25,y-25);
+  //curveVertex(x-5,y+20);
+  //curveVertex(x+25,y-25);
+  //curveVertex(x+25,y-25);
+  //endShape();
 }
+
 
 
 
