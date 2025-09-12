@@ -10,9 +10,9 @@ void draw() {
   for(int y=600; y>=0; y-=28){
    for (int x=0; x<=600; x+=30){
    if (shift==true)
-   scaleJ(x+16,y);
+   pangolin(x+16,y);
    else
-   scaleJ(x,y);
+   pangolin(x,y);
    }
    if(shift == true)
    shift = false;
@@ -22,7 +22,7 @@ void draw() {
 }
 }
 
-void scaleJ(int x, int y) {
+void pangolin(int x, int y) {
   //your code here
 beginShape();
   curveVertex(x-25,y-25);
@@ -32,6 +32,7 @@ beginShape();
   curveVertex(x+25,y-25);
   endShape();
 }
+
 
 
 
