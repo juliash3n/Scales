@@ -4,7 +4,6 @@ void setup(){
 }
 int shift = 30;
 void draw(){
-  fill(144,123,96);
   for(int y = 600; y >= 0; y -= 28){
         if(shift == 30){
           shift = 0;
@@ -18,6 +17,10 @@ void draw(){
   }
 
 void pangolin(int x, int y){
+  int r = 60+(int)(Math.random()*200);
+  int g = 60+(int)(Math.random()*200);
+  int b = 60+(int)(Math.random()*200);
+   fill(r,g,b);
   beginShape();
   curveVertex(x-25,y-25);
   curveVertex(x-25,y-25);
@@ -26,3 +29,4 @@ void pangolin(int x, int y){
   curveVertex(x+25,y-25);
   endShape();
 }
+
