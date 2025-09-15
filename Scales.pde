@@ -5,16 +5,16 @@ void setup() {
 void draw() {
   //your code here
  background(166,146,120);
-  boolean shift = true;
+  //boolean shift = true;
   fill(144,123,96);
   for(int y=600; y>=0; y-=28){
    for (int x=0; x<=600; x+=30){
-   if (shift==true)
-   pangolin(x+16,y);
-   else
+   //if (shift==true)
+   //pangolin(x+16,y);
+   //else
    pangolin(x,y);
    }
-   shift = !shift;
+   //shift = !shift;
   }
 }
 }
@@ -30,6 +30,7 @@ ellipse(x-25,y-25);
   //curveVertex(x+25,y-25);
   //endShape();
 }
+
 
 
 
