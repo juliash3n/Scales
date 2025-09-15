@@ -2,13 +2,13 @@ void setup(){
   size (600,600);
   noLoop();
 }
-int shift = 30;
+int shift = 16;
 void draw(){
   for(int y = 600; y >= 0; y -= 28){
-        if(shift == 30){
+        if(shift == 16){
           shift = 0;
         }else{
-          shift = 30;
+          shift = 16;
         }
       for(int x = 0 + shift; x <= 600; x += 30){
       pangolin(x, y);
@@ -29,4 +29,5 @@ void pangolin(int x, int y){
   curveVertex(x+25,y-25);
   endShape();
 }
+
 
